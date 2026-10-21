@@ -2308,6 +2308,7 @@ MonoBehaviour:
   speed: 10
   countText: {fileID: 2069667404}
   winTextObject: {fileID: 642691682}
+  pickupSound: {fileID: 8300000, guid: 41da906571439cf4ebfd88f0aaed5372, type: 3}
 --- !u!114 &969016120
 MonoBehaviour:
   m_ObjectHideFlags: 0

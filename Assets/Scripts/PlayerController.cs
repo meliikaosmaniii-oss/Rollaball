@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
 
     // UI object to display winning text.
     public GameObject winTextObject;
+    public AudioClip pickupSound;
 
     // Start is called before the first frame update.
     void Start()
@@ -70,6 +71,9 @@ public class PlayerController : MonoBehaviour
         {
             // Deactivate the collided object (making it disappear).
             other.gameObject.SetActive(false);
+
+            if (pickupSound != null)
+                AudioSource.PlayClipAtPoint(pickupSound, transform.position);
 
             // Increment the count of "PickUp" objects collected.
             count = count + 1;
